@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
 import logo from "../assets/br_logo.png"
+import cart from '../assets/cart.png'
+import user from '../assets/user.png'
 const Header = () => {
   return (
     <>
@@ -16,8 +18,8 @@ const Header = () => {
       </div>
       <div className="profile">
         <input type="text" className="search" placeholder='Search'/>
-        <img src="" alt="" className="cart" />
-        <img src="" alt="" className="profile" />
+        <img src={cart} alt="" className="cart" />
+        <img src={user} alt="" className="profile" />
       </div>
     </div>
     </>
