@@ -3,7 +3,7 @@ import './Categories.css';
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState('Headphones');
-  const categories = ['Headphones', 'Earphones', 'TWS', 'Speakers', 'Sound-Bars', 'Accessories'];
+  const categories = ['Headphones', 'Earphones', 'TWS', 'Speakers', 'Soundbars', 'Accessories'];
 
   return (
     <div className="categories-container">
