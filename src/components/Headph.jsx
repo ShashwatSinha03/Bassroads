@@ -3,7 +3,7 @@ import './Headph.css';
 import sp from '../assets/hp1.jpg';
 import sp1 from '../assets/hp2.jpg';
 
-const ProductCard = () => {
+const Prod2 = () => {
   return (
     <div className="product-card">
       <div className="image-container">
@@ -18,11 +18,11 @@ const ProductCard = () => {
           className="hover-image"
         />
         <div className="image-overlay">
-          <h3 className="overlay-text">SPEAKERS</h3>
+          <h3 className="overlay-text">HEADPHONES</h3>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProductCard;
+export default Prod2;

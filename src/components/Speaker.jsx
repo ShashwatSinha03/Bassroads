@@ -3,7 +3,7 @@ import './Speaker.css';
 import sp from '../assets/sp.jpg';
 import sp1 from '../assets/sp1.jpg';
 
-const ProductCard = () => {
+const Prod1 = () => {
   return (
     <div className="product-card">
       <div className="image-container">
@@ -25,4 +25,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default Prod1;

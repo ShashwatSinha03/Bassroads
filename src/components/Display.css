@@ -1,0 +1,21 @@
+.disp{
+  display: flex;
+  gap: 40px;
+  margin: 18px;
+}
+
+.dis1{
+  width: 1179px;
+}
+
+.dis2{
+width: 800px;
+}
+
+.speaker{
+  margin-bottom: 40px;
+}
+
+.earph{
+  margin-bottom: 40px;
+}
