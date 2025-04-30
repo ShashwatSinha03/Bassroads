@@ -1,90 +1,45 @@
-@font-face {
-  font-family: Prompt;
-  src: url(../fonts/Prompt/Prompt-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: Telex;
-  src: url(../fonts/Telex/Telex-Regular.ttf);
-}
-
-@font-face {
-  font-family: Varela;
-  src: url(../fonts/Varela/Varela-Regular.ttf);
-}
-
 .categories-container {
-  margin: 18px 18px;
-  padding: 0 1rem;
-  font-family: Telex;
+  padding: 2rem;
+  background: #2E2E2E;
+  min-height: 100vh;
 }
 
-.categories-scroll {
+.categories-filter {
   display: flex;
   gap: 1rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
-.categories-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.category-item {
-  flex: 0 0 226px; 
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  border-bottom: 2px solid #00000071;
-  border-right: 2px solid #00000071;
-  border-radius: 8px;
-  background: #404040;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.5rem;
-  white-space: normal;
-  font-family: Telex;
-}
-
-.category-item:hover {
-  border-color: #000;
-  background-color: #a899c0;
-  transform: translateY(-2px);
-}
-
-.category-item.active {
-  background: #945ACB;
-  color: white;
-  border-color: #000;
-}
-
-/* Add these new styles */
-.no-products-message {
-  text-align: center;
-  padding: 40px;
-  font-family: 'Varela', sans-serif;
+.category-btn {
+  padding: 0.8rem 2rem;
+  border: 2px solid #945ACB;
+  border-radius: 30px;
+  background: transparent;
   color: #a899c0;
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  font-family: 'Telex', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Scrollbar styling */
-.categories-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.categories-scroll::-webkit-scrollbar-track {
-  background: #2E2E2E;
-}
-
-.categories-scroll::-webkit-scrollbar-thumb {
+.category-btn.active {
   background: #945ACB;
-  border-radius: 4px;
+  color: white;
+  border-color: #a899c0;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(148, 90, 203, 0.2);
+  background-color: #a899c0;
+  color: #2E2E2E;
+}
+
+.no-products {
+  text-align: center;
+  color: #a899c0;
+  font-family: 'Varela', sans-serif;
+  font-size: 1.2rem;
+  padding: 4rem;
 }
