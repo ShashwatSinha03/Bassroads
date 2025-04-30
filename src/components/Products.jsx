@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import productsData from "../data/products.json";
+import { Link } from 'react-router-dom';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -11,15 +12,14 @@ function Products() {
   }, []);
 
   return (
+
     <div style={styles.container}>
       <div style={styles.grid}>
-        {products.length > 0 ? (
-          products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))
-        ) : (
-          <p>Loading...</p>
-        )}
+        {products.map((product) => (
+          <Link to={`/product/${product.id}`} key={product.id}>
+            <ProductCard product={product} />
+          </Link>
+        ))}
       </div>
     </div>
   );

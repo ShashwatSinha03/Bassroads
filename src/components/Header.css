@@ -78,3 +78,74 @@
   height: 24px;
   cursor: pointer;
 }
+
+.search {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid #945ACB;
+  background: #2E2E2E;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #a899c0;
+  box-shadow: 0 0 8px rgba(168, 153, 192, 0.3);
+}
+
+form {
+  position: relative;
+  display: inline-block;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #2E2E2E;
+  border: 1px solid #945ACB;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  margin-top: -2px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.suggestion-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.85s ease;
+}
+
+.suggestion-item:hover {
+  background: #ffffff10;
+}
+
+.suggestion-title {
+  font-family: 'Varela Round', sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.suggestion-price {
+  font-family: 'Prompt', sans-serif;
+  color: #a899c0;
+  font-size: 0.85rem;
+}
+
+.no-results {
+  padding: 12px 16px;
+  color: #a899c0;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.9rem;
+}

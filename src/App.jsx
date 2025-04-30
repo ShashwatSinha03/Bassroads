@@ -4,16 +4,25 @@ import Hero from './components/Hero'
 import Categories from './components/Categories'
 import Display from './components/Display'
 import Products from './components/Products'
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProductDetails from './components/ProductDetails';
 
+function App() {
   return (
-    <>
-    <Header/>
-    <Hero/>
-    <Categories/>
-    <Display/>
-    <Products/>
-    </>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero/>
+            <Categories/>
+            <Display/>
+            <Products/>
+          </>
+        }/>
+        <Route path="/product/:id" element={<ProductDetails/>}/>
+      </Routes>
+    </Router>
   )
 }
 
