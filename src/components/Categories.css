@@ -64,3 +64,27 @@
   color: white;
   border-color: #000;
 }
+
+/* Add these new styles */
+.no-products-message {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Varela', sans-serif;
+  color: #a899c0;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Scrollbar styling */
+.categories-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.categories-scroll::-webkit-scrollbar-track {
+  background: #2E2E2E;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+  background: #945ACB;
+  border-radius: 4px;
+}

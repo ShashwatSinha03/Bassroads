@@ -27,7 +27,7 @@ function Products() {
 
 const styles = {
   container: {
-    padding: "30px",
+    paddingLeft: "60px",
     fontFamily: "Arial, sans-serif",
   },
   grid: {

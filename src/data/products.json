@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Sony WH-1000XM3 Bluetooth Wireless Over Ear Headphones with Mic (Silver)",
+      "category": "Headphones",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692947383286-714WUJlhbLS._SL1500_.jpg",
       "price": "17,000",
       "description": "Industry-leading noise cancellation, Hi-Res Audio, Alexa enabled, and 40mm drivers for immersive sound.",
@@ -13,6 +14,7 @@
     {
       "id": 2,
       "title": "Sennheiser HD 400s Wired Over The Ear Headphone with Mic (Black)",
+      "category": "Headphones",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1691055730759-headphone4.jpg",
       "price": "8,000",
       "description": "Sennheiser sound quality, built-in mic, closed-back design, foldable for easy storage.",
@@ -23,6 +25,7 @@
     {
       "id": 3,
       "title": "Sony SA-SW5 300W Wireless Subwoofer for HT-A9 and HT-A7000 - Black",
+      "category": "Soundbars",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692947684843-61T7iilajhL._SL1200_.jpg",
       "price": "34,000",
       "description": "300W wireless subwoofer for deep bass and enhanced sound clarity.",
@@ -33,6 +36,7 @@
     {
       "id": 4,
       "title": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "category": "Headphones",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692941008275-headphone3.jpg",
       "price": "25,000",
       "description": "Active noise cancellation, clear calling, 30-hour battery, AI-based noise reduction.",
@@ -44,6 +48,7 @@
     {
       "id": 5,
       "title": "Urbanista Los Angeles Solar Powered Wireless Headphones",
+      "category": "Headphones",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1691056487173-headphon2.jpg",
       "price": "22,599",
       "description": "Solar-charged, hybrid ANC, unlimited playtime, and ambient sound mode.",
@@ -55,6 +60,7 @@
     {
       "id": 6,
       "title": "Sony Srs-Xb13 Wireless Extra Bass Portable Compact Bluetooth Speaker",
+      "category": "Speakers",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692940742197-speaker1.jpg",
       "price": "40,000",
       "description": "Waterproof, 16-hour battery, built-in mic, enhanced bass with passive radiator.",
@@ -66,6 +72,7 @@
     {
       "id": 7,
       "title": "boAt Rockerz 370 On Ear Bluetooth Headphones",
+      "category": "Headphones",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1691057718636-headphone5.jpg",
       "price": "1,499",
       "description": "Bluetooth v5.0, 8-hour playtime, ergonomic design, and HD sound.",
@@ -76,6 +83,7 @@
     {
       "id": 8,
       "title": "Apple AirPods (3rd Generation) with Lightning Charging Case",
+      "category": "TWS",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1691054448465-earbud2.jpg",
       "price": "19,799",
       "description": "Spatial audio with dynamic head tracking and adaptive EQ.",
@@ -86,6 +94,7 @@
     {
       "id": 9,
       "title": "DENON Home 350 Wireless Speaker - Powerful Room Filling Sound",
+      "category": "Speakers",
       "image": "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692947856684-81xoxBiCcjL._SL1500_.jpg",
       "price": "6919",
       "description": "Exceptional wireless sound, premium drivers, clear highs, and deep lows.",

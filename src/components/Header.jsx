@@ -17,7 +17,7 @@ const Header = () => {
       const results = productsData.products.filter(product =>
         product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.description.toLowerCase().includes(searchTerm.toLowerCase())
-      ).slice(0, 5); // Show top 5 matches
+      ).slice(0, 5);
       setFilteredProducts(results);
     } else {
       setFilteredProducts([]);
@@ -39,17 +39,28 @@ const Header = () => {
     setShowSuggestions(false);
   };
 
+  // New logo click handler
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="header">
       <div className="explore">
-        <a href="#">Shop</a>
+        <a href="#">Home</a>
         <a href="#">Explore</a>
         <a href="#">Support</a>
       </div>
-      <div className="logo">
-        <img src={logo} alt="logo" className="logo" />
-        <h1 className="logo_txt">BASSROADS</h1>
+
+      <div 
+        className="logo" 
+        onClick={handleLogoClick}
+        style={{ cursor: 'pointer' }}
+      >
+        <img src={logo} alt="logo" className="logo-img" />
+        <h1 className="logo-txt">BASSROADS</h1>
       </div>
+
       <div className="profile">
         <div className="search-container">
           <form onSubmit={handleSearchSubmit}>
@@ -83,8 +94,8 @@ const Header = () => {
             </div>
           )}
         </div>
-        <img src={cart} alt="Cart" className="cart" />
-        <img src={user} alt="User Profile" className="profile" />
+        <img src={cart} alt="Cart" className="cart-icon" />
+        <img src={user} alt="User Profile" className="profile-icon" />
       </div>
     </div>
   );
