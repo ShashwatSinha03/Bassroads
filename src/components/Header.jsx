@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
 import './Header.css';
 import logo from "../assets/br_logo.png";
 import cart from '../assets/cart.png';
@@ -47,8 +47,8 @@ const Header = () => {
   return (
     <div className="header">
       <div className="explore">
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
+      <Link to="/">Home</Link>
+      <Link to="/explore">Explore</Link>
         <a href="#">Support</a>
       </div>
 

@@ -140,3 +140,28 @@
   font-family: Varela;
   font-size: 0.9rem;
 }
+
+.explore {
+  display: flex;
+  gap: 2rem;
+}
+
+.explore a {
+  color: #945ACB;
+  text-decoration: none;
+  font-family: 'Telex', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.explore a:hover {
+  background: #945ACB20;
+  color: #a899c0;
+}
+
+/* Active link styling */
+.explore a.active {
+  background: #945ACB;
+  color: white;
+}
