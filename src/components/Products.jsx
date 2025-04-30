@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "./ProductCard"; 
+import ProductCard from "./ProductCard";
 import productsData from "../data/products.json";
 
 function Products() {
@@ -27,15 +27,15 @@ function Products() {
 
 const styles = {
   container: {
-    padding: "40px 20px",
+    padding: "30px",
     fontFamily: "Arial, sans-serif",
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",  // Fixed 3-column layout
+    gridTemplateColumns: "repeat(3, 1fr)",
     gap: "30px",
-    justifyItems: "center",
-  }
+    justifyContent: "center",
+  },
 };
 
 export default Products;
