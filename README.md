@@ -1,13 +1,26 @@
-# React + Vite
+# BassRoads- and AudioTech Storefront 🎧
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-Currently, two official plugins are available:
+A modern e-commerce interface for premium audio equipment. College project demonstrating React fundamentals with real-world UX patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo 🔗  
+[Try Now](bassroads.vercel.app)
 
-## Expanding the ESLint configuration
+## Core Features ⚡
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Bassroads
+| Feature | Description |  
+|---------|-------------|
+| 🔍 **Smart Search** | Live product suggestions with price matching |
+| 🎚️ **Category Filter** | Dynamic filtering across 6 device categories |
+| 🖼️ **Product Grid** | Responsive 3-column layout (mobile optimized) |
+| 📄 **Detail Pages** | Complete specs with high-res images |
+| 🛒 **Cart Ready** | UI prepared for cart integration *(mock data)* |
+
+## Tech Stack 💻
+- **Frontend**: React 18 + Vite
+- **Routing**: React Router v6
+- **Styling**: CSS Modules + Custom Properties
+- **State**: React Hooks (useState, useEffect)
+- **Data**: Local JSON database
