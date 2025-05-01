@@ -45,11 +45,6 @@ const ProductDetails = () => {
               </button>
             </div>
           </div>
-          
-          <div className="product-meta-info">
-            <span className="product-sku">SKU: {product.id}</span>
-            <span className="product-category">Category: {product.category}</span>
-          </div>
         </div>
       </div>
     </div>
