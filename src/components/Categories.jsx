@@ -4,12 +4,12 @@ import productsData from '../data/products.json';
 import './Categories.css';
 
 const Categories = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('Featured');
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  // Available categories including 'All'
+  // Available categories
   const categories = [
-    'All',
+    'Featured',
     'Headphones',
     'Earphones',
     'TWS',
@@ -19,11 +19,15 @@ const Categories = () => {
   ];
 
   useEffect(() => {
-    if (selectedCategory === 'All') {
-      setFilteredProducts(productsData.products);
+    if (selectedCategory === 'Featured') {
+      // Shuffle array and pick first 3 elements
+      const shuffledProducts = [...productsData.products]
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 3);
+      setFilteredProducts(shuffledProducts);
     } else {
       const filtered = productsData.products.filter(
-        product => product.category === selectedCategory
+        product => product.category.toLowerCase() === selectedCategory.toLowerCase()
       );
       setFilteredProducts(filtered);
     }

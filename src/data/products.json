@@ -102,6 +102,105 @@
       "brand": "Denon",
       "model": "DENON HOME 350",
       "color": "white"
+    },
+    {
+      "id": 10,
+      "title": "Bose QuietComfort 45 Bluetooth Wireless Over Ear Headphones with Mic Noise Cancelling - Triple Black",
+      "category": "Headphones",
+      "image": "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45-LE_Right-Angle_1200x1022_Midnight-Blue_RGB.jpg/jcr:content/renditions/cq5dam.web.1920.1920.jpeg",
+      "price": "29,999",
+      "description": "Iconic quiet, comfort, and sound. Features high-fidelity audio, Quiet and Aware Modes, and up to 24 hours of battery life.",
+      "brand": "Bose",
+      "model": "QuietComfort 45",
+      "color": "Triple Black"
+    },
+    {
+      "id": 11,
+      "title": "JBL Flip 6 Wireless Portable Bluetooth Speaker Pro Sound, Upto 12 Hours Playtime, IP67 Water & Dustproof, PartyBoost & Personalization by JBL App (Red)",
+      "category": "Soundbars",
+      "image": "https://www.jiomart.com/images/product/original/492796560/jbl-flip-6-by-harman-bluetooth-speaker-with-upto-12-hours-playtime-ip67-waterproof-dustproof-with-partyboost-without-mic-black-digital-o492796560-p591216812-1-202203292356.jpeg?im=Resize=(420,420)",
+      "price": "8,998",
+      "description": "Portable Bluetooth speaker with powerful JBL Pro Sound, 12 hours of playtime, and IP67 waterproof and dustproof rating.",
+      "brand": "JBL",
+      "model": "Flip 6",
+      "color": "Red"
+    },
+    {
+      "id": 12,
+      "title": "Soundcore Anker Liberty Air 2 Pro True Wireless Earbuds with Active Noise Cancellation (Black)",
+      "category": "TWS",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLGKVwL_D6eoyKn0yv-WucXim60bY3PSzVrwMVgyqLoJ58Av1Abm3YgNvjc22_bjY91jw&usqp=CAU",
+      "price": "9,999",
+      "description": "True wireless earbuds with targeted active noise cancellation, PureNote driver technology, and up to 26 hours of playtime.",
+      "brand": "Anker",
+      "model": "Liberty Air 2 Pro",
+      "color": "Black"
+    },
+    {
+      "id": 13,
+      "title": "Samsung Galaxy Buds Pro True Wireless Earbuds with Active Noise Cancellation (Phantom Black)",
+      "category": "TWS",
+      "image": "https://www.recellexchange.com/cdn/shop/files/5_4429d248-9335-41af-abf3-23376682db12.png?v=1741622206",
+      "price": "15,990",
+      "description": "Premium earbuds with intelligent active noise cancellation, 2-way speakers, and IPX7 water resistance.",
+      "brand": "Samsung",
+      "model": "Galaxy Buds Pro",
+      "color": "Phantom Black"
+    },
+    {
+      "id": 14,
+      "title": "Beats Studio3 Wireless Over-Ear Headphones with Active Noise Cancelling (Matte Black)",
+      "category": "Headphones",
+      "image": "https://m.media-amazon.com/images/I/61XL8XhVTOL._AC_UF1000,1000_QL80_.jpg",
+      "price": "24,900",
+      "description": "High-performance wireless noise cancelling headphones with real-time audio calibration and up to 22 hours of battery life.",
+      "brand": "Beats",
+      "model": "Studio3",
+      "color": "Matte Black"
+    },
+    {
+      "id": 15,
+      "title": "Bowers & Wilkins PX7 Over Ear Wireless Bluetooth Headphones with Adaptive Noise Cancelling (Space Grey)",
+      "category": "Headphones",
+      "image": "https://avstore.in/cdn/shop/products/AVStore-Bowers-Wilkins-PX7-S2-Black-Hero.jpg?v=1661584695",
+      "price": "34,999",
+      "description": "Over-ear headphones with adaptive noise cancelling, 43.6mm drivers, and up to 30 hours of battery life.",
+      "brand": "Bowers & Wilkins",
+      "model": "PX7",
+      "color": "Space Grey"
+    },
+    {
+      "id": 16,
+      "title": "Sony SRS-XB43 Portable Bluetooth Speaker with Extra Bass, IP67 Waterproof & Dustproof (Black)",
+      "category": "Soundbars",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLkNKNWN_16ZGX2HO2ruxaV2gazuGXmdWo8l-1e8LRqKx1jFpgkQF8K_wjEbZZW-xYT4&usqp=CAU",
+      "price": "21,990",
+      "description": "Portable speaker with extra bass, dual passive radiators, and up to 24 hours of battery life.",
+      "brand": "Sony",
+      "model": "SRS-XB43",
+      "color": "Black"
+    },
+    {
+      "id": 17,
+      "title": "Jabra Elite 85t True Wireless Earbuds with Advanced Active Noise Cancellation (Titanium Black)",
+      "category": "Earphones",
+      "image": "https://m.media-amazon.com/images/I/718rEgIZEDL.jpg",
+      "price": "17,999",
+      "description": "True wireless earbuds with adjustable active noise cancellation, 12mm speakers, and up to 25 hours of battery life.",
+      "brand": "Jabra",
+      "model": "Elite 85t",
+      "color": "Titanium Black"
+    },
+    {
+      "id": 18,
+      "title": "Marshall Stanmore II Wireless Bluetooth Speaker (White)",
+      "category": "Speakers",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyLhvyAZxUc_NTSBqcI1GGNpRwHQubGzvwA&s",
+      "price": "31,999",
+      "description": "Classic Marshall design with Bluetooth 5.0, aptX technology, and customizable sound via the Marshall app.",
+      "brand": "Marshall",
+      "model": "Stanmore II",
+      "color": "White"
     }
   ]
 }

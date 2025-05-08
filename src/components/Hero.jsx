@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import V1 from '../assets/V1.jpg';
-import V2 from '../assets/V2.jpg';
-import V3 from '../assets/V3.jpg';
-import V4 from '../assets/V4.jpg';
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const slides = [V1, V2, V3, V4];
+  
+  // GIF URLs from Giphy
+  const slides = [
+    'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTQzY2ZiNm9rZzU0YjJiNmhzYWwxaGVuZm12azlhenZnYWk0ejkwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cqOXwcMkDbtgk/giphy.gif',
+    'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNpZGdrd2J3OW4xOHZ4cmhqMHA4amExNmlweHdhd3g5aDBxOXhqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdYxNLpianF1jva/giphy.gif',
+    'https://media.giphy.com/media/ZQ3nXIlmUT7DLgOSA4/giphy.gif?cid=ecf05e47r23ztshb1mi216ps1hfffc1xhnkwyqb31cysa3xy&ep=v1_gifs_related&rid=giphy.gif&ct=g',
+    'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzBoN2ZteGJ0dWxqdHlqdW42dzJ4azlrcWR1Ymd3OHY4aG1zN3R4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iMiEYOTQ7WnIlQ6BXb/giphy.gif'
+  ];
 
+  // Keep the rest of the code exactly the same
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(prev => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -29,11 +33,11 @@ const Hero = () => {
     <div className="hero-container">
       <div className="slider-wrapper" 
            style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
-        {slides.map((image, index) => (
+        {slides.map((gifUrl, index) => (
           <div className="slide" key={index}>
             <img 
-              src={image} 
-              alt={`Slide ${index + 1}`} 
+              src={gifUrl} 
+              alt={`Promotional GIF ${index + 1}`} 
               className="slide-image" 
             />
           </div>

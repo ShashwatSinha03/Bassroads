@@ -3,7 +3,7 @@ import Products from './Products';
 import productsData from '../data/products.json';
 
 const Explore = () => {
-  const allProducts = productsData.products.slice(0, 9);
+  const allProducts = productsData.products;
 
   return (
     <div className="explore-page">
