@@ -11,6 +11,8 @@ import ProductDetails from './components/ProductDetails';
 import Support from './components/Support';
 import CartComponent from './components/CartComponent';
 import PaymentModal from './components/PaymentModal';
+import Login from './components/Login';
+import Signup from './components/Signup';
 import productsData from './data/products.json';
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [directCheckoutItem, setDirectCheckoutItem] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // Cart functions
   const addToCart = (product) => {
@@ -51,10 +54,10 @@ function App() {
   };
 
   const getCartTotal = () => {
-  return cartItems.reduce(
-    (total, item) => total + parseFloat(item.price) * item.quantity, 0
-  );
-};
+    return cartItems.reduce(
+      (total, item) => total + parseFloat(item.price) * item.quantity, 0
+    );
+  };
 
   const handleBuyNow = (product) => {
     setDirectCheckoutItem([{...product, quantity: 1}]);
@@ -81,6 +84,15 @@ function App() {
   // Calculate cart count for header
   const cartCount = cartItems.reduce((count, item) => count + item.quantity, 0);
 
+  // Handle login state
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
     <Router>
       <div className="app-container">
@@ -88,6 +100,8 @@ function App() {
           cartCount={cartCount}
           openCart={openCart}
           products={productsData.products}
+          isLoggedIn={isLoggedIn}
+          handleLogout={handleLogout}
         />
         
         <main className="main-content">
@@ -125,8 +139,13 @@ function App() {
             />
 
             <Route 
-              path="/profile" 
-              element={<div>Profile Page</div>} 
+              path="/login" 
+              element={<Login handleLogin={handleLogin} />} 
+            />
+
+            <Route 
+              path="/signup" 
+              element={<Signup handleLogin={handleLogin} />} 
             />
           </Routes>
         </main>

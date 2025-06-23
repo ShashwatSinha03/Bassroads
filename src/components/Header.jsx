@@ -5,7 +5,7 @@ import logo from "../assets/br_logo.png";
 import cart from '../assets/cart.png';
 import user from '../assets/user.png';
 
-const Header = ({ cartCount, openCart, products }) => {
+const Header = ({ cartCount, openCart, products, isLoggedIn, handleLogout }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -45,6 +45,15 @@ const Header = ({ cartCount, openCart, products }) => {
   const handleCartClick = (e) => {
     e.preventDefault();
     openCart();
+  };
+
+  const handleUserIconClick = (e) => {
+    e.preventDefault();
+    if (isLoggedIn) {
+      handleLogout();
+    } else {
+      navigate('/login');
+    }
   };
 
   return (
@@ -104,9 +113,21 @@ const Header = ({ cartCount, openCart, products }) => {
             )}
           </div>
         </a>
-        <Link to="/profile" className="icon-link">
-          <img src={user} alt="User profile" className="profile-icon" />
-        </Link>
+        
+        <a 
+          href="#" 
+          className="icon-link"
+          onClick={handleUserIconClick}
+        >
+          <img 
+            src={user} 
+            alt="User profile" 
+            className="profile-icon" 
+          />
+          {isLoggedIn && (
+            <div className="logout-indicator"></div>
+          )}
+        </a>
       </div>
     </div>
   );
