@@ -4,9 +4,8 @@ import './Header.css';
 import logo from "../assets/br_logo.png";
 import cart from '../assets/cart.png';
 import user from '../assets/user.png';
-import productsData from '../data/products.json';
 
-const Header = () => {
+const Header = ({ cartCount, openCart, products }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -14,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     if (searchTerm.trim()) {
-      const results = productsData.products.filter(product =>
+      const results = products.filter(product =>
         product.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
         product.description.toLowerCase().includes(searchTerm.toLowerCase())
       ).slice(0, 5);
@@ -22,7 +21,7 @@ const Header = () => {
     } else {
       setFilteredProducts([]);
     }
-  }, [searchTerm]);
+  }, [searchTerm, products]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -43,12 +42,17 @@ const Header = () => {
     navigate('/');
   };
 
+  const handleCartClick = (e) => {
+    e.preventDefault();
+    openCart();
+  };
+
   return (
     <div className="header">
       <div className="explore">
         <Link to="/">Home</Link>
         <Link to="/explore">Explore</Link>
-        <Link to="/support">Support</Link> {/* Updated Support link */}
+        <Link to="/support">Support</Link>
       </div>
 
       <div className="logo" onClick={handleLogoClick}>
@@ -92,9 +96,14 @@ const Header = () => {
             </div>
           )}
         </div>
-        <Link to="/cart" className="icon-link">
-          <img src={cart} alt="Shopping cart" className="cart-icon" />
-        </Link>
+        <a href="#" onClick={handleCartClick} className="icon-link">
+          <div className="cart-icon-wrapper">
+            <img src={cart} alt="Shopping cart" className="cart-icon" />
+            {cartCount > 0 && (
+              <span className="cart-count">{cartCount}</span>
+            )}
+          </div>
+        </a>
         <Link to="/profile" className="icon-link">
           <img src={user} alt="User profile" className="profile-icon" />
         </Link>

@@ -1,21 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import productsData from '../data/products.json';
 import './ProductDetails.css';
 
-const ProductDetails = () => {
+const ProductDetails = ({ addToCart, handleBuyNow, products }) => {
   const { id } = useParams();
-  const product = productsData.products.find(p => p.id === parseInt(id));
-
-  const handleAddToCart = () => {
-    // Add cart functionality
-    console.log('Added to cart:', product.id);
-  };
-
-  const handleBuyNow = () => {
-    // Add checkout functionality
-    console.log('Buy now:', product.id);
-  };
+  const product = products.find(p => p.id === parseInt(id));
 
   if (!product) return <div className="not-found">Product not found</div>;
 
@@ -37,10 +26,16 @@ const ProductDetails = () => {
           <div className="price-display">
             <span className="product-current-price">₹{product.price}</span>
             <div className="action-buttons">
-              <button className="cart-button" onClick={handleAddToCart}>
+              <button 
+                className="cart-button" 
+                onClick={() => addToCart(product)}
+              >
                 Add to Cart
               </button>
-              <button className="buy-button" onClick={handleBuyNow}>
+              <button 
+                className="buy-button" 
+                onClick={() => handleBuyNow(product)}
+              >
                 Buy Now
               </button>
             </div>

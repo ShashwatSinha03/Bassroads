@@ -1,0 +1,147 @@
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-modal {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  font-family: 'Prompt', sans-serif;
+  color: #945ACB;
+  margin: 0;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.order-summary {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-summary h3 {
+  font-family: 'Prompt', sans-serif;
+  color: #945ACB;
+  margin-top: 0;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.payment-form {
+  font-family: 'Telex', sans-serif;
+}
+
+.payment-form h3 {
+  font-family: 'Prompt', sans-serif;
+  color: #945ACB;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.pay-now-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #945ACB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pay-now-btn:hover {
+  background-color: #7a4aa8;
+}
+
+.order-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.order-success h2 {
+  color: #4caf50;
+  font-family: 'Prompt', sans-serif;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #4caf50;
+  margin: 1.5rem 0;
+}
