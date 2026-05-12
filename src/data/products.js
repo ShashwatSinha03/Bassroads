@@ -1,0 +1,554 @@
+export const categories = [
+  { id: 'headphones', name: 'Headphones', icon: 'headphones' },
+  { id: 'earphones', name: 'Earphones', icon: 'headphones' },
+  { id: 'speakers', name: 'Speakers', icon: 'speaker' },
+  { id: 'soundbars', name: 'Soundbars', icon: 'audio-lines' },
+  { id: 'tws', name: 'TWS Earbuds', icon: 'headphones' },
+  { id: 'dacs', name: 'DACs & Amps', icon: 'audio-lines' },
+];
+
+export const products = [
+  {
+    id: 1,
+    name: "Sony WH-1000XM5",
+    category: "headphones",
+    brand: "Sony",
+    price: 24999,
+    originalPrice: 32999,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800"
+    ],
+    description: "Industry-leading noise cancellation with Auto NC Optimizer, exceptional sound quality, and 30-hour battery life.",
+    specs: { battery: "30 hours", driver: "30mm", weight: "250g", connectivity: "Bluetooth 5.2" },
+    rating: 4.8,
+    reviews: 2340,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 2,
+    name: "Apple AirPods Max",
+    category: "headphones",
+    brand: "Apple",
+    price: 44999,
+    originalPrice: 54999,
+    image: "https://images.unsplash.com/photo-1625245488600-f03fef636a3c?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1625245488600-f03fef636a3c?w=800",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800"
+    ],
+    description: "Premium over-ear headphones with computational audio, Active Noise Cancellation, and breathable knit mesh.",
+    specs: { battery: "20 hours", driver: "40mm", weight: "385g", connectivity: "Bluetooth 5.0" },
+    rating: 4.7,
+    reviews: 1850,
+    isNew: false,
+    isDeal: false
+  },
+  {
+    id: 3,
+    name: "Bose QuietComfort Ultra",
+    category: "headphones",
+    brand: "Bose",
+    price: 28999,
+    originalPrice: 34999,
+    image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+    ],
+    description: "World-class noise cancellation with immersive audio and personalized listening experience.",
+    specs: { battery: "24 hours", driver: "35mm", weight: "250g", connectivity: "Bluetooth 5.3" },
+    rating: 4.9,
+    reviews: 3200,
+    isNew: true,
+    isDeal: true
+  },
+  {
+    id: 4,
+    name: "Sennheiser Momentum 4",
+    category: "headphones",
+    brand: "Sennheiser",
+    price: 24990,
+    originalPrice: 31990,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Audiophile-grade wireless headphones with 60-hour battery and exceptional comfort.",
+    specs: { battery: "60 hours", driver: "42mm", weight: "293g", connectivity: "Bluetooth 5.2" },
+    rating: 4.6,
+    reviews: 980,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 5,
+    name: "Beats Studio Pro",
+    category: "headphones",
+    brand: "Beats",
+    price: 19999,
+    originalPrice: 26999,
+    image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800"
+    ],
+    description: "Signature Beats sound with custom 40mm drivers and enhanced compatibility.",
+    specs: { battery: "40 hours", driver: "40mm", weight: "269g", connectivity: "Bluetooth 5.0" },
+    rating: 4.5,
+    reviews: 2100,
+    isNew: true,
+    isDeal: false
+  },
+  {
+    id: 6,
+    name: "JBL Tune 770NC",
+    category: "headphones",
+    brand: "JBL",
+    price: 4999,
+    originalPrice: 7499,
+    image: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800"
+    ],
+    description: "Adaptive noise cancelling with JBL Pure Bass Sound and up to 70 hours of battery.",
+    specs: { battery: "70 hours", driver: "40mm", weight: "232g", connectivity: "Bluetooth 5.3" },
+    rating: 4.4,
+    reviews: 4500,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 7,
+    name: "Shure Aonic 50 Gen 2",
+    category: "headphones",
+    brand: "Shure",
+    price: 26999,
+    originalPrice: 34999,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+    ],
+    description: "Studio-quality wireless headphones with adjustable ANC and exceptional clarity.",
+    specs: { battery: "45 hours", driver: "50mm", weight: "250g", connectivity: "Bluetooth 5.0" },
+    rating: 4.7,
+    reviews: 650,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 8,
+    name: "Sony WH-CH720N",
+    category: "headphones",
+    brand: "Sony",
+    price: 7999,
+    originalPrice: 11999,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Lightweight wireless headphones with Dual Noise Sensor and AI-based noise reduction.",
+    specs: { battery: "35 hours", driver: "30mm", weight: "192g", connectivity: "Bluetooth 5.2" },
+    rating: 4.3,
+    reviews: 2800,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 9,
+    name: "Samsung Galaxy Buds2 Pro",
+    category: "tws",
+    brand: "Samsung",
+    price: 12999,
+    originalPrice: 17999,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Premium TWS with 24-bit Hi-Fi sound, intelligent ANC, and IPX7 water resistance.",
+    specs: { battery: "5 hours (18 with case)", driver: "10mm", weight: "5.5g per bud", connectivity: "Bluetooth 5.3" },
+    rating: 4.5,
+    reviews: 3200,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 10,
+    name: "Apple AirPods Pro 2nd Gen",
+    category: "tws",
+    brand: "Apple",
+    price: 21999,
+    originalPrice: 24999,
+    image: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800"
+    ],
+    description: "Active Noise Cancellation, Adaptive Transparency, and personalized spatial audio.",
+    specs: { battery: "6 hours (30 with case)", driver: "Apple-designed", weight: "5.3g per bud", connectivity: "Bluetooth 5.3" },
+    rating: 4.9,
+    reviews: 8500,
+    isNew: false,
+    isDeal: false
+  },
+  {
+    id: 11,
+    name: "Sony WF-1000XM5",
+    category: "tws",
+    brand: "Sony",
+    price: 17999,
+    originalPrice: 24999,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Premium TWS with industry-leading noise cancellation and exceptional call quality.",
+    specs: { battery: "8 hours (24 with case)", driver: "8.4mm", weight: "5.9g per bud", connectivity: "Bluetooth 5.3" },
+    rating: 4.7,
+    reviews: 4100,
+    isNew: true,
+    isDeal: true
+  },
+  {
+    id: 12,
+    name: "JBL Live Pro 2",
+    category: "tws",
+    brand: "JBL",
+    price: 8999,
+    originalPrice: 12999,
+    image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800"
+    ],
+    description: "True wireless with JBL Signature Sound, adaptive ANC, and 6 mics for calls.",
+    specs: { battery: "7 hours (28 with case)", driver: "11mm", weight: "4.8g per bud", connectivity: "Bluetooth 5.2" },
+    rating: 4.4,
+    reviews: 2200,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 13,
+    name: "Nothing Ear (2)",
+    category: "tws",
+    brand: "Nothing",
+    price: 9999,
+    originalPrice: 14999,
+    image: "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=800"
+    ],
+    description: "Dual connection, personalized sound profile, and transparent design aesthetic.",
+    specs: { battery: "6 hours (34 with case)", driver: "11.6mm", weight: "4.5g per bud", connectivity: "Bluetooth 5.3" },
+    rating: 4.3,
+    reviews: 3800,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 14,
+    name: "OnePlus Nord Buds 3 Pro",
+    category: "tws",
+    brand: "OnePlus",
+    price: 2999,
+    originalPrice: 4999,
+    image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800"
+    ],
+    description: "Budget-friendly TWS with 50dB ANC, 44-hour battery, and fast charging.",
+    specs: { battery: "12 hours (44 with case)", driver: "12.4mm", weight: "4g per bud", connectivity: "Bluetooth 5.3" },
+    rating: 4.2,
+    reviews: 5600,
+    isNew: true,
+    isDeal: true
+  },
+  {
+    id: 15,
+    name: "Marshall Stanmore III",
+    category: "speakers",
+    brand: "Marshall",
+    price: 31999,
+    originalPrice: 38999,
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800"
+    ],
+    description: "Iconic Marshall design with dynamic loudness and next-gen Bluetooth 5.2.",
+    specs: { battery: "N/A (wired)", driver: "50W woofer, 2x15W tweeters", weight: "4.5kg", connectivity: "Bluetooth 5.2, RCA" },
+    rating: 4.7,
+    reviews: 890,
+    isNew: true,
+    isDeal: false
+  },
+  {
+    id: 16,
+    name: "JBL Flip 6",
+    category: "speakers",
+    brand: "JBL",
+    price: 8999,
+    originalPrice: 10999,
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800"
+    ],
+    description: "Portable Bluetooth speaker with JBL Pro Sound and IP67 waterproof rating.",
+    specs: { battery: "12 hours", driver: "45x80mm woofer, 2x20mm tweeters", weight: "540g", connectivity: "Bluetooth 5.1" },
+    rating: 4.6,
+    reviews: 12000,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 17,
+    name: "Sony SRS-XB43",
+    category: "speakers",
+    brand: "Sony",
+    price: 21999,
+    originalPrice: 27999,
+    image: "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=800"
+    ],
+    description: "Extra Bass portable speaker with IP67 rating and 24-hour battery life.",
+    specs: { battery: "24 hours", driver: "61mm woofer, 2x20mm tweeters", weight: "2.9kg", connectivity: "Bluetooth 5.0" },
+    rating: 4.5,
+    reviews: 4500,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 18,
+    name: "Sonos Era 100",
+    category: "speakers",
+    brand: "Sonos",
+    price: 19999,
+    originalPrice: 24999,
+    image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800"
+    ],
+    description: "Next-gen compact speaker with incredible sound and voice control.",
+    specs: { battery: "N/A (wired)", driver: "2x tweeter, 1x mid-woofer", weight: "1.78kg", connectivity: "WiFi, Bluetooth 5.0" },
+    rating: 4.8,
+    reviews: 2100,
+    isNew: true,
+    isDeal: false
+  },
+  {
+    id: 19,
+    name: "Bose SoundLink Flex",
+    category: "speakers",
+    brand: "Bose",
+    price: 13999,
+    originalPrice: 17999,
+    image: "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=800"
+    ],
+    description: "Waterproof portable speaker with PositionIQ technology and powerful sound.",
+    specs: { battery: "12 hours", driver: "Custom", weight: "600g", connectivity: "Bluetooth 4.2" },
+    rating: 4.4,
+    reviews: 6700,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 20,
+    name: "Ultimate Ears Wonderboom 3",
+    category: "speakers",
+    brand: "UE",
+    price: 7999,
+    originalPrice: 9999,
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800"
+    ],
+    description: "Compact, waterproof speaker with 360° sound and 14-hour battery.",
+    specs: { battery: "14 hours", driver: "2x 40mm active, 2x 46.1mm passive", weight: "420g", connectivity: "Bluetooth 5.0" },
+    rating: 4.3,
+    reviews: 8900,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 21,
+    name: "JBL Bar 500",
+    category: "soundbars",
+    brand: "JBL",
+    price: 34999,
+    originalPrice: 44999,
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800"
+    ],
+    description: "4K Dolby Atmos soundbar with 590W output and wireless subwoofer.",
+    specs: { battery: "N/A", driver: "4x race track drivers, 2x tweeters", weight: "14.5kg", connectivity: "HDMI eARC, Bluetooth" },
+    rating: 4.6,
+    reviews: 1200,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 22,
+    name: "Sony HT-A7000",
+    category: "soundbars",
+    brand: "Sony",
+    price: 74999,
+    originalPrice: 89999,
+    image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800"
+    ],
+    description: "Premium 7.1.2ch soundbar with Dolby Atmos, DTS:X, and 360 Reality Audio.",
+    specs: { battery: "N/A", driver: "5x front, 2x up-firing, 1x subwoofer", weight: "8.7kg", connectivity: "HDMI eARC, WiFi, Bluetooth" },
+    rating: 4.8,
+    reviews: 650,
+    isNew: false,
+    isDeal: false
+  },
+  {
+    id: 23,
+    name: "Samsung HW-Q990C",
+    category: "soundbars",
+    brand: "Samsung",
+    price: 54999,
+    originalPrice: 74999,
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800"
+    ],
+    description: "11.1.4ch Dolby Atmos soundbar with Q-Symphony and SpaceFit Sound Pro.",
+    specs: { battery: "N/A", driver: "22 speakers", weight: "22.8kg", connectivity: "HDMI eARC, WiFi, Bluetooth" },
+    rating: 4.7,
+    reviews: 890,
+    isNew: true,
+    isDeal: true
+  },
+  {
+    id: 24,
+    name: "Bose Smart Soundbar 600",
+    category: "soundbars",
+    brand: "Bose",
+    price: 34999,
+    originalPrice: 42999,
+    image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800"
+    ],
+    description: "Dolby Atmos soundbar with TrueSpace processing and Alexa built-in.",
+    specs: { battery: "N/A", driver: "5 drivers", weight: "3.5kg", connectivity: "HDMI eARC, WiFi, Bluetooth" },
+    rating: 4.5,
+    reviews: 1800,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 25,
+    name: "Zebronics Thunder 100",
+    category: "soundbars",
+    brand: "Zebronics",
+    price: 3499,
+    originalPrice: 5999,
+    image: "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558537348-c0f8e733989b?w=800"
+    ],
+    description: "Budget soundbar with 80W output, multiple connectivity, and LED display.",
+    specs: { battery: "N/A", driver: "2x 5W satellites, 70W subwoofer", weight: "5kg", connectivity: "USB, SD, Bluetooth, AUX" },
+    rating: 4.0,
+    reviews: 4500,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 26,
+    name: "JBL Endurance Run 2",
+    category: "earphones",
+    brand: "JBL",
+    price: 1499,
+    originalPrice: 2499,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Wired neckband with JBL Pure Bass Sound, IPX5 sweatproof, and magnetic buds.",
+    specs: { battery: "N/A (wired)", driver: "8mm", weight: "25g", connectivity: "3.5mm jack" },
+    rating: 4.2,
+    reviews: 8900,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 27,
+    name: "Sony WI-1000XM2",
+    category: "earphones",
+    brand: "Sony",
+    price: 12999,
+    originalPrice: 17999,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+    ],
+    description: "Neckband with HD Noise Cancellation Processor and High-Resolution Audio.",
+    specs: { battery: "10 hours", driver: "9mm", weight: "58g", connectivity: "Bluetooth 5.0" },
+    rating: 4.6,
+    reviews: 2100,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 28,
+    name: "Shure Aonic 215 Gen 2",
+    category: "earphones",
+    brand: "Shure",
+    price: 15999,
+    originalPrice: 21999,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+    ],
+    description: "Wired SE215 earphones with detachable cable and exceptional sound isolation.",
+    specs: { battery: "N/A (wired)", driver: "Dynamic micro-driver", weight: "30g", connectivity: "3.5mm" },
+    rating: 4.7,
+    reviews: 3400,
+    isNew: false,
+    isDeal: false
+  },
+  {
+    id: 29,
+    name: "FiiO K5 Pro ESS",
+    category: "dacs",
+    brand: "FiiO",
+    price: 12999,
+    originalPrice: 15999,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+    ],
+    description: "Desktop DAC with ESS9038Q2M, 768kHz/32bit, and powerful headphone amp.",
+    specs: { battery: "N/A", driver: "N/A", weight: "448g", connectivity: "USB, Coaxial, Optical, RCA" },
+    rating: 4.8,
+    reviews: 1200,
+    isNew: false,
+    isDeal: true
+  },
+  {
+    id: 30,
+    name: "Chord Mojo 2",
+    category: "dacs",
+    brand: "Chord",
+    price: 49999,
+    originalPrice: 59999,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+    ],
+    description: "Portable DAC/amp with advanced DSP and unprecedented transparency.",
+    specs: { battery: "N/A (portable)", driver: "N/A", weight: "185g", connectivity: "USB-C, Optical, Coaxial" },
+    rating: 4.9,
+    reviews: 450,
+    isNew: true,
+    isDeal: false
+  }
+];

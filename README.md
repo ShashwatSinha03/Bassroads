@@ -1,26 +1,64 @@
-# BassRoads- and AudioTech Storefront 🎧
+# BassRoads - Premium Audio E-Commerce
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+A modern e-commerce platform for premium audio equipment built with React, Tailwind CSS, and Framer Motion.
 
-A modern e-commerce interface for premium audio equipment. College project demonstrating React fundamentals with real-world UX patterns.
+## Features
 
-## Live Demo 🔗  
-[Try Now](bassroads.vercel.app)
+- **Dark/Light Theme Toggle** - Switch between dark and light modes
+- **Product Discovery** - Browse 30+ premium audio products across 6 categories
+- **Smart Filtering** - Filter by category, brand, and price range
+- **Sorting Options** - Sort by price, rating, and newest
+- **Shopping Cart** - Persistent cart with localStorage
+- **Wishlist** - Save favorite products
+- **Recently Viewed** - Track your browsing history
+- **Responsive Design** - Works on all devices
 
-## Core Features ⚡
+## Tech Stack
 
-| Feature | Description |  
-|---------|-------------|
-| 🔍 **Smart Search** | Live product suggestions with price matching |
-| 🎚️ **Category Filter** | Dynamic filtering across 6 device categories |
-| 🖼️ **Product Grid** | Responsive 3-column layout (mobile optimized) |
-| 📄 **Detail Pages** | Complete specs with high-res images |
-| 🛒 **Cart Ready** | UI prepared for cart integration *(mock data)* |
+- **React 18** - UI framework
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Zustand** - State management
+- **Lucide React** - Icons
 
-## Tech Stack 💻
-- **Frontend**: React 18 + Vite
-- **Routing**: React Router v6
-- **Styling**: CSS Modules + Custom Properties
-- **State**: React Hooks (useState, useEffect)
-- **Data**: Local JSON database
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # UI components
+│   ├── cart/       # Cart and checkout
+│   ├── home/       # Home page components
+│   ├── layout/     # Header, Footer
+│   └── products/   # Product components
+├── data/           # Product data
+├── pages/          # Route pages
+├── store/          # Zustand stores
+└── App.jsx         # Main app
+```
+
+## Categories
+
+- Headphones
+- Earphones
+- Speakers
+- Soundbars
+- TWS Earbuds
+- DACs & Amps
+
+## License
+
+MIT
