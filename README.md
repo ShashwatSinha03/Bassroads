@@ -1,6 +1,6 @@
 # BassRoads - Premium Audio E-Commerce
 
-A modern e-commerce platform for premium audio equipment built with React, Tailwind CSS, and Framer Motion.
+A modern e-commerce platform for premium audio equipment built with Next.js 14, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -8,15 +8,14 @@ A modern e-commerce platform for premium audio equipment built with React, Tailw
 - **Product Discovery** - Browse 30+ premium audio products across 6 categories
 - **Smart Filtering** - Filter by category, brand, and price range
 - **Sorting Options** - Sort by price, rating, and newest
-- **Shopping Cart** - Persistent cart with localStorage
+- **Shopping Cart** - Persistent cart functionality
 - **Wishlist** - Save favorite products
-- **Recently Viewed** - Track your browsing history
 - **Responsive Design** - Works on all devices
 
 ## Tech Stack
 
-- **React 18** - UI framework
-- **Vite** - Build tool
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
 - **Framer Motion** - Animations
 - **Zustand** - State management
@@ -33,21 +32,24 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Start production server
+npm start
 ```
 
 ## Project Structure
 
 ```
 src/
-├── components/     # UI components
-│   ├── cart/       # Cart and checkout
-│   ├── home/       # Home page components
-│   ├── layout/     # Header, Footer
-│   └── products/   # Product components
-├── data/           # Product data
-├── pages/          # Route pages
-├── store/          # Zustand stores
-└── App.jsx         # Main app
+├── app/              # Next.js App Router pages
+├── components/       # UI components
+│   ├── cart/         # Cart and checkout
+│   ├── layout/       # Header, Footer
+│   ├── products/     # Product components
+│   └── providers/    # Theme and Cart providers
+├── data/             # Product data
+├── store/            # Zustand stores
+└── styles/           # Global styles
 ```
 
 ## Categories
